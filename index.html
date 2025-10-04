@@ -1,25 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <title>Critique du film de Demon Slayer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demon Slayer: Infinity Castle – Critique</title>
 
-    <style>
-        :root{ --accent:#c0392b; }
-        body{ background:#f8f9fb; color:#212529; }
-        .site-header{ background:linear-gradient(90deg, rgba(0,0,0,0.03), transparent); border-bottom:1px solid rgba(0,0,0,0.04); }
-        .site-title{ font-weight:700; letter-spacing:0.6px; }
-        .article-hero{ background:linear-gradient(180deg, rgba(0,0,0,0.02), transparent); padding:2.5rem; border-radius:.5rem; }
-        .rating-badge{ background:var(--accent); color:white; font-weight:700; border-radius:.75rem; padding:.35rem .7rem; display:inline-block; }
-        .meta { color:#6c757d; font-size:.95rem; }
-        .categories .badge{ margin-right:.25rem; margin-bottom:.25rem; }
-        .related-card img{ object-fit:cover; height:140px; width:100%; border-radius:.35rem; }
-        footer{ padding:2rem 0; color:#6c757d; }
-        @media(min-width:992px){ .article-hero{ padding:3rem; } }
-    </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+  <style>
+    :root {
+      --accent: #c0392b;
+      --bg-dark: #1c1f24;
+      --bg-light: #2a2e35;
+      --text-light: #f1f1f1;
+    }
+
+    body {
+      background: var(--bg-dark);
+      color: var(--text-light);
+      font-family: "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+    }
+
+    .hero {
+      position: relative;
+      background: url('./images/header-demonslayer.jpg') center/cover no-repeat;
+      color: white;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.55);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 2rem;
+      max-width: 800px;
+    }
+
+    .hero-content h1 {
+      font-weight: 700;
+      font-size: 2.8rem;
+    }
+
+    .hero-content p {
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 1.15rem;
+    }
+
+    .article-hero {
+      background: var(--bg-light);
+      padding: 2.5rem;
+      border-radius: 0.75rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      margin-top: -4rem;
+      position: relative;
+      z-index: 5;
+    }
+
+    .rating-badge {
+      background: var(--accent);
+      color: white;
+      font-weight: 700;
+      border-radius: .75rem;
+      padding: .35rem .7rem;
+      display: inline-block;
+    }
+
+    .meta {
+      color: #adb5bd;
+      font-size: .95rem;
+    }
+
+    .categories .badge {
+      margin-right: .25rem;
+      margin-bottom: .25rem;
+      background: #343a40;
+      color: #f1f1f1;
+      border: 1px solid #555;
+    }
+
+    .related-card img {
+      object-fit: cover;
+      height: 140px;
+      width: 100%;
+      border-radius: .35rem;
+    }
+
+    footer {
+      padding: 2rem 0;
+      color: #868e96;
+      text-align: center;
+    }
+
+    figure img {
+      border-radius: .5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    figure figcaption {
+      color: #adb5bd;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
   <body>
