@@ -1,0 +1,55 @@
+:root {
+  --bs-danger: #b3001b;
+}
+
+body {
+  background-color: #1c1f24;
+  color: #f1f1f1;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Header / Hero */
+.hero {
+  background: url('/assets/images/hashira.png') center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Article */
+.article-hero {
+  background-color: #2a2e35;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  margin-top: -4rem;
+}
+
+figure img {
+  border-radius: .5rem;
+}
+
+.note-finale {
+  color: var(--bs-danger);
+}
+
+/* Footer */
+footer {
+  color: #adb5bd;
+}

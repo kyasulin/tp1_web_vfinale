@@ -8,211 +8,127 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
-  <style>
-    :root {
-      --accent: #c0392b;
-      --bg-dark: #1c1f24;
-      --bg-light: #2a2e35;
-      --text-light: #f1f1f1;
-    }
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
-    body {
-      background: var(--bg-dark);
-      color: var(--text-light);
-      font-family: "Segoe UI", Roboto, sans-serif;
-      line-height: 1.6;
-    }
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-    .hero {
-      position: relative;
-      background: url('./images/hashira.png') center/cover no-repeat;
-      color: white;
-      height: 60vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.55);
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      padding: 2rem;
-      max-width: 800px;
-    }
-
-    .hero-content h1 {
-      font-weight: 700;
-      font-size: 2.8rem;
-    }
-
-    .hero-content p {
-      color: rgba(255, 255, 255, 0.85);
-      font-size: 1.15rem;
-    }
-
-    .article-hero {
-      background: var(--bg-light);
-      padding: 2.5rem;
-      border-radius: 0.75rem;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-      margin-top: -4rem;
-      position: relative;
-      z-index: 5;
-    }
-
-    .rating-badge {
-      background: var(--accent);
-      color: white;
-      font-weight: 700;
-      border-radius: .75rem;
-      padding: .35rem .7rem;
-      display: inline-block;
-    }
-
-    .meta {
-      color: #adb5bd;
-      font-size: .95rem;
-    }
-
-    .categories .badge {
-      margin-right: .25rem;
-      margin-bottom: .25rem;
-      background: #343a40;
-      color: #f1f1f1;
-      border: 1px solid #555;
-    }
-
-    .related-card img {
-      object-fit: cover;
-      height: 140px;
-      width: 100%;
-      border-radius: .35rem;
-    }
-
-    footer {
-      padding: 2rem 0;
-      color: #868e96;
-      text-align: center;
-    }
-
-    figure img {
-      border-radius: .5rem;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    }
-
-    figure figcaption {
-      color: #adb5bd;
-      font-size: 0.9rem;
-    }
-  </style>
+  <link rel="stylesheet" href="/src/css/style.css">
 </head>
+
 <body>
   <header class="hero">
     <div class="hero-content">
-      <h1>Demon Slayer: Infinity Castle</h1>
-      <p>Une apothéose visuelle et émotionnelle pour conclure une saga légendaire</p>
+      <h1 class="fw-bold">Demon Slayer: Infinity Castle</h1>
+      <p class="fs-5">Une apothéose visuelle et émotionnelle pour conclure une saga légendaire</p>
+      <button class="btn btn-danger mt-3" data-bs-toggle="modal" data-bs-target="#filmModal">
+        <i class="bi bi-play-circle"></i> Voir la bande-annonce
+      </button>
     </div>
   </header>
 
+  <div class="modal fade" id="filmModal" tabindex="-1" aria-labelledby="filmModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header border-secondary">
+          <h5 class="modal-title" id="filmModalLabel">Bande-annonce officielle</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
+        </div>
+        <div class="modal-body text-center">
+          <iframe width="100%" height="400" src="https://www.youtube.com/embed/your_trailer_here" title="Bande-annonce Demon Slayer Infinity Castle" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <main class="container my-5">
     <div class="row g-4">
-      <div class="col-lg-8">
+      <div class="col-md-8 col-lg-9">
         <article class="article-hero">
           <div class="d-flex align-items-center justify-content-between mb-3">
-            <div class="meta">Sortie : Été 2025</div>
-            <div class="rating-badge">9.5/10</div>
+            <div class="text-secondary">Sortie : Été 2025</div>
+            <div class="badge bg-danger"><i class="bi bi-heart-fill me-1"></i>9.5/10</div>
           </div>
 
           <p>
-            Après des années d’attente, <strong>Demon Slayer: Infinity Castle</strong> signe la conclusion tant attendue du chef-d’œuvre de Koyoharu Gotouge.
-            Ce film monumental nous plonge dans le combat final entre Tanjiro, les Piliers et Muzan Kibutsuji.
-            Une œuvre d’une intensité rare, alliant prouesse technique et charge émotionnelle.
+            Après des années d’attente, <strong>Demon Slayer: Infinity Castle</strong> vient clore en beauté l’épopée des pourfendeurs de démons.
+            Réalisé par <strong>Haruo Sotozaki</strong> et produit par le studio <strong>ufotable</strong>, ce dernier chapitre transporte le spectateur au cœur du combat final contre <strong>Muzan Kibutsuji</strong>.
+            Une œuvre qui repousse les limites techniques et émotionnelles de l’animation japonaise moderne.
           </p>
 
           <figure class="mb-4">
-            <img src="./images/demon-slayer.jpg" alt="Demon Slayer Infinity Castle" class="img-fluid">
-            <figcaption>Source : ufotable / Aniplex</figcaption>
+            <img src="/assets/images/demon-slayer.jpg" alt="Demon Slayer Infinity Castle" class="img-fluid">
+            <figcaption class="text-muted small mt-1">Source : ufotable / Aniplex</figcaption>
           </figure>
 
-          <h4 class="mt-4">Une prouesse d’animation</h4>
+          <h4>Une prouesse d’animation à couper le souffle</h4>
           <p>
-            Le studio <strong>ufotable</strong> livre ici un spectacle inégalé.
-            Les jeux de lumière, les transitions et les effets visuels atteignent une perfection presque irréelle.
-            Le Château de l’Infini, lieu principal du film, se transforme en un labyrinthe vivant où chaque combat devient une œuvre d’art.
+            Difficile d’imaginer qu’<strong>ufotable</strong> puisse encore se surpasser après « Mugen Train » et « Swordsmith Village ».
+            Et pourtant, le studio signe ici un spectacle visuel d’une ampleur inédite.
+            Les mouvements de caméra virevoltent dans un espace mouvant, où le <em>Château de l’Infini</em> semble respirer, se tordre et se reconstruire à chaque instant.
           </p>
 
           <figure class="my-4">
-            <img src="./images/akaza looking at tanjiro.webp" alt="Tanjiro Infinity Castle Fight" class="img-fluid">
-            <figcaption>L’œil d’Akaza observant Tanjiro dans le Château de l’Infini</figcaption>
+            <img src="/assets/images/akaza looking at tanjiro.webp" alt="Tanjiro Infinity Castle Fight" class="img-fluid">
+            <figcaption class="text-muted small mt-1">L’œil d’Akaza observant Tanjiro dans le Château de l’Infini</figcaption>
           </figure>
 
-          <h4 class="mt-4">Un récit haletant et émouvant</h4>
+          <h4>Une intensité dramatique constante</h4>
           <p>
-            Le film ne se contente pas d’impressionner visuellement : il bouleverse. Chaque Hashira y trouve son moment de gloire et de tragédie.
-            Les adieux, parfois déchirants, rappellent que <em>Demon Slayer</em> est avant tout une histoire de liens humains et de persévérance.
+            Le film rend hommage à tous ses héros, vivants ou disparus.
+            Les sacrifices des <strong>Hashira</strong> trouvent ici leur pleine résonance, et chaque scène d’adieu est empreinte d’une sincérité déchirante.
+            <strong>Tanjiro</strong>, plus que jamais, incarne l’espoir au milieu du désespoir.
           </p>
 
-          <h4 class="mt-4">Une conclusion magistrale</h4>
+          <h4>Une conclusion magistrale</h4>
           <p>
-            Sans spoiler, <strong>Infinity Castle</strong> conclut la saga avec grâce et émotion.
-            La musique de <strong>Yuki Kajiura</strong> et <strong>Go Shiina</strong> sublime chaque scène, du désespoir à la lumière.
-            Le final laisse sans voix, marquant à jamais la fin d’une ère pour l’animation japonaise.
+            Le final, d’une beauté tragique, achève cette saga avec une dignité rare.
+            La bande-son signée par <strong>Yuki Kajiura</strong> et <strong>Go Shiina</strong> amplifie chaque frisson.
+            <em>Demon Slayer: Infinity Castle</em> n’est pas qu’un simple film ; c’est une célébration de la persévérance et du courage.
           </p>
 
           <div class="mt-4 d-flex align-items-center gap-3">
-            <div class="rating-badge">Chef-d’œuvre</div>
-            <div class="text-muted small">Note finale : <strong>9.5/10</strong></div>
+            <div class="badge bg-danger">Chef-d’œuvre</div>
+            <div class="note-finale small fw-semibold">Note finale : 9.5/10</div>
           </div>
         </article>
 
         <section id="categories" class="mt-5">
-          <h5>Catégories</h5>
-          <div class="categories mt-3">
-            <span class="badge">Animation <span class="text-muted">8</span></span>
-            <span class="badge">Action <span class="text-muted">10</span></span>
-            <span class="badge">Fantastique <span class="text-muted">6</span></span>
+          <h5><i class="bi bi-tags"></i> Catégories</h5>
+          <div class="mt-3">
+            <span class="badge bg-secondary">Animation</span>
+            <span class="badge bg-secondary">Action</span>
+            <span class="badge bg-secondary">Fantastique</span>
+            <span class="badge bg-secondary">Drame</span>
           </div>
         </section>
       </div>
 
-      <aside class="col-lg-4">
+      <aside class="col-md-4 col-lg-3">
         <div class="card bg-dark text-light p-3 mb-4 border-0">
-          <h6 class="mb-3">Articles similaires</h6>
+          <h6 class="mb-3"><i class="bi bi-film"></i> Articles similaires</h6>
 
-          <div class="related-card mb-3">
-            <img src="./images/jjk.jpg" alt="Jujutsu Kaisen">
-            <div class="mt-2"><a href="#" class="stretched-link text-decoration-none text-light">Jujutsu Kaisen : Le combat final de Gojo</a></div>
-            <div class="text-muted small mt-1">Décembre 2023</div>
+          <div class="mb-3">
+            <img src="/assets/images/jjk.jpg" alt="Jujutsu Kaisen" class="img-fluid rounded">
+            <a href="#" class="stretched-link text-decoration-none text-light d-block mt-2">Jujutsu Kaisen : Le combat final de Gojo</a>
+            <div class="text-muted small">Décembre 2023</div>
           </div>
 
           <hr class="border-secondary">
 
-          <div class="related-card mb-3">
-            <img src="./images/aot.jpg" alt="Attack on Titan Final Season">
-            <div class="mt-2"><a href="#" class="stretched-link text-decoration-none text-light">Attack on Titan : Une conclusion légendaire</a></div>
-            <div class="text-muted small mt-1">Novembre 2023</div>
+          <div class="mb-3">
+            <img src="/assets/images/aot.jpg" alt="Attack on Titan Final Season" class="img-fluid rounded">
+            <a href="#" class="stretched-link text-decoration-none text-light d-block mt-2">Attack on Titan : Une conclusion légendaire</a>
+            <div class="text-muted small">Novembre 2023</div>
           </div>
-        </div>
-
-        <div class="card bg-dark text-light p-3 border-0">
-          <h6>À propos</h6>
-          <p class="small text-muted mb-0">2025 © Spires d'une critique cardinale</p>
         </div>
       </aside>
     </div>
   </main>
 
-  <footer class="container">
-    <small>I don't knoww</small>
+  <footer class="container text-center py-3">
+    <small class="text-secondary">© 2025 Infinity Reviews – Tous droits réservés</small>
   </footer>
 
+  <script src="/src/js/script.js"></script>
 </body>
 </html>
