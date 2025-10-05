@@ -8,7 +8,6 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-/* Header / Hero */
 .hero {
   background: url('/assets/images/hashira.png') center/cover no-repeat;
   height: 60vh;
@@ -32,7 +31,6 @@ body {
   z-index: 2;
 }
 
-/* Article */
 .article-hero {
   background-color: #2a2e35;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
@@ -49,7 +47,6 @@ figure img {
   color: var(--bs-danger);
 }
 
-/* Footer */
 footer {
   color: #adb5bd;
 }
