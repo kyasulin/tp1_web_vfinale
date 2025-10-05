@@ -47,6 +47,12 @@ figure img {
   color: var(--bs-danger);
 }
 
+/* marche pas je demissione*/
+ .related-card a:hover,
+.related-card a:focus {
+  text-decoration: underline;
+}
+
 footer {
   color: #adb5bd;
 }
