@@ -31,6 +31,7 @@ body {
   z-index: 2;
 }
 
+/*bloc est censé être au dessus de l'image bruh je laisse tomber- */
 .article-hero {
   background-color: #2a2e35;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
